@@ -34,3 +34,28 @@ A simple desktop application built with **Python + PySide6** that generates secu
 
 ## Project Structure
 
+project/
+│── main.py # Runs the application
+│── ui.py # PySide6 GUI (PasswordGeneratorApp)
+│── logic.py # Password generation + strength logic
+
+## How It Works
+
+1. User selects password length
+2. User chooses character types via checkboxes
+3. App generates a random password using selected rules
+4. Password strength is calculated based on:
+   - Length
+   - Variety of character types
+5. Strength label updates with color feedback
+
+---
+
+## Password Strength Logic
+
+- **Weak** → short length or very limited character types  
+- **Medium** → moderate length or partial character variety  
+- **Strong** → good length + multiple character types  
+- **Very Strong** → long + full character variety  
+
+
